@@ -1,0 +1,555 @@
+* {
+box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: roboto, sans-serif;
+  color: rgb(96, 96, 96);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.50rem;
+  line-height: 2.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+h5 {
+  line-height: 2rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+/** start of header**/
+
+header {
+
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+.desktop {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_logo {
+  display: flex;
+  align-items: center;
+}
+.header_logo span {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+#bold {
+  font-weight: bold;
+}
+
+#light {
+  color: rgb( 180, 180, 180);
+}
+
+.desktop ul {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.desktop ul li {
+ padding-left: 1rem;
+ list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+  .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
+}
+
+/**start of content**/
+
+.content {
+  position: relative;
+  top: 4rem;
+}
+
+/**start of banner - box**/
+
+.banner_wrapper {
+  background-color: rgb(240, 240, 240);
+  margin: 0 auto;
+  display: flex;
+}
+
+.banner_image {
+  flex: 1 0 60%;
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  padding-right: 2rem;
+}
+
+.myimage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner_info {
+  flex: 1 0 40%;
+  display: flex;
+  align-items: center;
+}
+
+.banner_info_box {
+  flex-basis: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.banner_info_box h1 {
+  padding-bottom: 1rem;
+}
+
+.banner_info_box h3 {
+  padding-bottom: 1rem;
+}
+
+.button {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: rgb(128, 128, 128);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: block;
+}
+
+@media only screen and (max-width: 760px) {
+  .banner_wrapper {
+    background-color: rgb(240, 240, 240);
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .banner_image {
+    flex: 1 0 100%;
+    padding: 0;
+  }
+
+  .banner_info {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+    flex: 1 0 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .banner_info_box {
+    flex-basis: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .button {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    align-self: stretch;
+    color: rgb(255, 255, 255);
+  }
+}
+
+/**end of header**/
+
+/**start of content news**/
+
+.news_wrappers {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.news_wrapper_main {
+  flex: 1 0 60%;
+}
+
+.news_wrapper_side {
+  flex: 1 0 40%;
+  padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.news_main_info {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.news_main_info h1 {
+  padding-bottom: 1.5rem;
+}
+
+.news_main_info p {
+  padding-bottom: 1.5rem;
+}
+
+.news_wrapper_main .news_main_image {
+  width: 100%;
+  overflow: hidden;
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1.5rem;
+}
+
+.news_side {
+  width: 100%;
+  height: auto;
+  display: flex;
+ }
+
+.news_side:last-child {
+  background-color: rgb(240, 240, 240);
+}
+
+.news_side_info {
+  width: 65%;
+  padding: 1rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.news_side_info h1 {
+  padding-bottom: .5rem;
+}
+
+.news_side_info p {
+  padding-bottom: .5rem;
+}
+
+#blue_letter {
+  color: blue;
+}
+
+.news_side_image {
+  width: 35%;
+  padding: 1rem;
+}
+
+.myimagenews {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.myimagenewsmobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .news_wrappers {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  }
+
+  .news_wrapper_main {
+    display: none;
+  }
+
+  .news_wrapper_side {
+  padding-top: 1rem;
+  flex: 1 0 auto;
+  }
+
+  .news_side {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 1rem;
+  }
+
+  .news_side_info {
+    width: 100%;
+    height: auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .news_side_info h3 {
+    line-height: 2.75rem;
+  }
+
+  .news_side_info p {
+    line-height: 1.5rem;
+  }
+
+  .news_side_image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .myimagenews {
+    display: none;
+   }
+
+  .myimagenewsmobile {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/**end of content news**/
+
+/**start  of content academics**/
+
+#academics_wrappers {
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  padding: 2rem 3.5rem;
+}
+.academics_title h1 {
+  padding: 1rem;
+  text-align: center;
+}
+.academics_gallery {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.acadimage {
+  width: 100%;
+  display: block;
+}
+
+.academics_box h3 {
+  text-format: bold;
+}
+
+.academics_box {
+  flex-basis: 30%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.box_info {
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.academics_gallery_mobile span {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  #academics_wrappers {
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+ }
+
+  .academics_title h1 {
+    background-color: inherit;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .academics_gallery {
+    display: none;
+  }
+
+   .academics_gallery_mobile span {
+     display: block;
+     padding-top: 1.5rem;
+     padding-bottom: 2rem;
+     padding-left: 1rem;
+     background-color: rgb(240, 240, 240);
+     margin-bottom: 0.5rem;
+     font-size: 1.5rem;
+   }
+}
+
+/**end of content academics**/
+
+/**start of content thesis**/
+
+#thesis_wrappers {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.thesis_wrapper {
+  display: flex;
+  padding-right: 1rem;
+}
+
+.thesis_title {
+  padding: 1rem;
+  text-align: center;
+}
+
+.thesis_video {
+  padding: 1rem;
+}
+
+.thesis_main {
+  flex: 1 0 60%;
+  height: auto;
+  overflow: hidden;
+}
+
+.thesis_video video {
+  width: 100%;
+  height: auto;
+}
+
+.thesis_side {
+  flex: 1 0 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis_boxes_color {
+  background-color: rgb(240, 240, 240);
+}
+
+.thesis_boxes {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+}
+
+.thesis_box_image {
+  width: 35%;
+}
+
+.thesis_side_box {
+  width: 65%;
+  margin-left: 1rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#space {
+  padding-top: 1rem;
+}
+
+.thesis_main_info {
+  padding: 1.5rem;
+}
+
+@media only screen and (max-width: 760px) {
+  #thesis_wrappers {
+    width: 100%;
+  }
+
+  .thesis_title {
+  padding: 1rem;
+  text-align: center;
+  }
+
+  .thesis_wrapper {
+    display: block;
+  }
+
+  .thesis_video {
+    padding: 1rem;
+  }
+
+  .thesis_main {
+    flex: 1 0 60%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .thesis_video video {
+    width: 100%;
+    height: auto;
+  }
+
+  .thesis_main_info {
+    display: none;
+   }
+
+  .thesis_side {
+    display: none;
+  }
+}
+
+/**start of footer**/
+footer {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 760px) {
+  .footer_mobile {
+    display: none;
+  }
+}
+
+/**end of content thesis**/
